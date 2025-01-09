@@ -1,5 +1,6 @@
 "use client"
 import { useEffect, useState } from "react";
+import "@/styles/TitleForm.css"
 
 export function TitleForm() {
     const [imgSrc, setImageSrc] = useState('/img/doit.png');
@@ -11,10 +12,11 @@ export function TitleForm() {
         };
 
         handleResize();
+        
         window.addEventListener('resize', handleResize);
 
         return () => window.removeEventListener('resize', handleResize);
-    });
+    }, []);
 
     return (
         <div className="title-container">
