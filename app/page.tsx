@@ -1,9 +1,9 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { TitleForm } from "@/components/auth/TitleForm";
 
 export default function Home() {
   return (
     <main>
+      <TitleForm/>
       메인페이지 yo
     </main>
   );
